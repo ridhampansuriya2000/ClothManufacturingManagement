@@ -63,9 +63,7 @@ const Signup = ()=>{
             <input type="password" class="inputFields"
             value={Password}
             onChange={(e)=>setpassword(e.target.value)} /> <br/>
-             
-             
-      <button id="join-btn" 
+      <button id="join-btn"
       onClick={()=>PostData()}>Get Started</button>
 	</ul>
   </form>

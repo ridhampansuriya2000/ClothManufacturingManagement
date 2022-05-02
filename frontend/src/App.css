@@ -22,7 +22,11 @@
 .App-link {
     color: #61dafb;
 }
-
+.google-auth{
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);

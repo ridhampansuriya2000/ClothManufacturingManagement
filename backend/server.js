@@ -55,9 +55,13 @@ app.use(require('./routes/bill'))
 app.use(require('./routes/post'))
 
 const connection = mongoose.connection; 
-connection.once('open', () => {
-    console.log("MongoDB database connected");
-})
+try{
+    connection.once('open', () => {
+        console.log("MongoDB database connected");
+    })
+}catch(error){
+    console.log("Error in Connection to DB",error);
+}
 connection.on('error', (e) => console.log("error"));
 
 app.use('/', routes);

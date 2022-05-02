@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
+import GoogleWithLogin from "./GoogleWithLogin";
 
 export default class Register extends Component {
   state = {
@@ -74,6 +75,7 @@ handleSubmit = event => {
                 Register
               </button>
             </form>
+            <GoogleWithLogin className={'google-auth'}/>
             <p className="lead mt-4">Have An Account? <a href="/login">Login</a></p>
           </div>
         </div>
